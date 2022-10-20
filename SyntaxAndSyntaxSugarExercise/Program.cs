@@ -1,10 +1,14 @@
-﻿namespace SyntaxAndSyntaxSugarExercise
+﻿
+namespace SyntaxAndSyntaxSugarExercise
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var answer = 4;
+            
+            var responce = (answer < 9) ? ($"{answer} is less than 9") : ($"{answer} is greater than or equal to 9");
+            Console.WriteLine(responce);
         }
     }
 }
